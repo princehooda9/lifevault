@@ -1,16 +1,29 @@
-# React + Vite
+# LifeVault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Cloud-based intelligent personal workspace for secure file and notes management.
 
-Currently, two official plugins are available:
+**Live App:** https://lifevault-alpha.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- 🔐 Authentication via Firebase (Google + Email)
+- 📁 Drag-and-drop upload, nested folders, smart file categorization
+- ⭐ Priority Vault for pinned files
+- 📝 Rich-text notes with Tiptap editor
+- ⏰ Auto deadline/reminder extraction from notes (Chrono.js)
+- 📊 Storage analytics & activity tracking
+- ☁️ Cloudinary storage + Firestore real-time DB
 
-## React Compiler
+## Tech Stack
+React · Vite · Tailwind CSS · Firebase · Cloudinary · Firestore · Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
+```bash
+git clone https://github.com/princehooda9/lifevault
+cd lifevault
+npm install
+cp .env.example .env  # Add your API keys
+npm run dev
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Environment
+Create a `.env` file based on `.env.example` before running locally.
